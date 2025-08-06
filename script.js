@@ -4,7 +4,7 @@ function mostrarFormulario(nombre) {
   document.getElementById("form-" + nombre).classList.add("active");
 }
 
-const url = "https://script.google.com/macros/s/AKfycbzb7acyDIFaOyXH5gNrqu1HyHwRYjS6-_WJumL-g6XPKLhcMH-qzFT7pC2QwisTObKB/exec";
+const url = "https://script.google.com/macros/s/AKfycbzBU8RPJwZnWpO2AaV3EEg0yzaPevY2vHZAl3pbKJzDbYo8szpVh-b1lY3sLkuWqful/exec";
 
 // Mostrar mensaje visual
 function mostrarMensaje(texto, tipo = "success") {
