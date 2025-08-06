@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema Matías Mecánico</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Matías Mecánico</h1>
+    <p>Formulario de registro de trabajos</p>
+  </header>
+
+  <nav>
+    <button onclick="mostrarFormulario('servicio')">Servicio</button>
+    <button onclick="mostrarFormulario('compra')">Compra</button>
+  </nav>
+
+  <div class="container">
+    <form id="form-servicio" class="active">
+      <h2>Registro de Servicio</h2>
+      <label>Nombre del cliente *</label><input type="text" required />
+      <label>Tipo de máquina / vehículo *</label><input type="text" required />
+      <label>Trabajo realizado *</label><textarea rows="2" required></textarea>
+      <label>Gasto extra</label><input type="number" placeholder="$" />
+      <label>Total cobrado *</label><input type="number" required placeholder="$" />
+      <label>Fecha de entrada *</label><input type="date" required />
+      <label>¿Está cancelado? *</label>
+      <select required>
+        <option value="">Seleccionar</option>
+        <option value="Sí">Sí</option>
+        <option value="No">No</option>
+      </select>
+      <button class="submit" type="submit">Enviar servicio</button>
+    </form>
+
+    <form id="form-compra">
+      <h2>Registro de Compra</h2>
+      <label>Fecha de compra *</label><input type="date" required />
+      <label>Proveedor *</label><input type="text" required />
+      <label>Repuesto comprado *</label><input type="text" required />
+      <label>Cantidad *</label><input type="number" required />
+      <label>Costo unitario *</label><input type="number" required />
+      <label>Total compra</label><input type="number" />
+      <button class="submit" type="submit">Enviar compra</button>
+    </form>
+
+    <div id="resumen" style="margin-top: 40px;">
+      <h2>Resumen (en desarrollo)</h2>
+      <p>Este espacio mostrará el resumen de registros recientes e indicadores.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
